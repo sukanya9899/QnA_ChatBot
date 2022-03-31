@@ -1,0 +1,109 @@
+> !# @source.endpoint=https://qwikskillsfaq.cognitiveservices.azure.com/
+> !# @source.kbId=4f315e85-19c0-4905-8364-99b90cdf8692
+> # QnA pairs
+
+# ? Hello
+```
+Hello ! how may I help you ?
+```
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "1"></a>
+
+# ? What is Vivid E95 Ultra Edition?
+
+```markdown
+ Vivid E95 Ultra Edition offers a broad range of probes to help achieve extraordinary images for cardiac, vascular, abdominal, pediatric, neonatal, fetal heart, obstetric, gynecologic, urological, transcranial and small parts applications. 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "2"></a>
+
+# ? What are the 12S-D applications of Vivid E95?
+
+```markdown
+ Pediatric, Cardiac, Coronary, Neonatal Head, Neonatal, Abdominal 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "3"></a>
+
+# ? What is the depth of field of C2-9-D of Vivid E95?
+
+```markdown
+ 30 cm 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "4"></a>
+
+# ? What is the biopsy guide for C2-9-D of Vivid E95?
+
+```markdown
+ Multi-angle disposable with a reusable bracket. 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "5"></a>
+
+# ? What is the bandwidth of 10T-D of Vivid E95?
+
+```markdown
+ 3.3 - 10.0 MHz 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "6"></a>
+
+# ? What is the CPU configuration for Muse v9?
+
+```markdown
+ 2 Core 2.8 GHz Processor or performance equivalents (local database) OR 2 Core 2.0 GHz Processor or performance equivalents (remote database) 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "7"></a>
+
+# ? What are the client workstation CPU specifications of Muse v9?
+
+```markdown
+ 2 Core 2.13 GHz Processor or performance equivalents. 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "8"></a>
+
+# ? What is the specification of CCG/HL7 Interface server memory of Muse v9?
+
+```markdown
+ 4 GB RAM 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "9"></a>
+
+# ? What are the Minimum specifications for video card resolution of muse v9?
+
+```markdown
+ 1280 x 1024 
+```
+
+> !# @qna.pair.source = Dummy FAQ.pdf
+
+<a id = "10"></a>
+
+# ? What are the Minimum specifications for laser printer hardware of Muse v9?
+
+```markdown
+ Postscript level 2 and PCL5 
+```
+
+

@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_qwikskills_bot",
+  "recognizers": {
+    "en-us": "qwikskills_bot.en-us.qna",
+    "": "qwikskills_bot.en-us.qna"
+  }
+}
