@@ -1,0 +1,9 @@
+{
+  "qwikskills_bot.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "Exit": "",
+      "Restart": ""
+    }
+  }
+}

@@ -44,69 +44,8 @@
               ]
             }
           ],
-          "value": "dialog.foreach.value"
-        }
-      ]
-    },
-    {
-      "$kind": "Microsoft.OnUnknownIntent",
-      "$designer": {
-        "id": "mb2n1u",
-        "comment": "This trigger fires when an incoming activity is not handled by any other trigger."
-      },
-      "actions": [
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "kMjqz1",
-            "comment": "It is recommended to show a message to the user when the bot does not know how to handle an incoming activity and provide follow up options or a help message."
-          },
-          "activity": "${SendActivity_DidNotUnderstand()}"
-        },
-        {
-          "$kind": "Microsoft.ChoiceInput",
-          "$designer": {
-            "id": "jhpLTl"
-          },
-          "defaultLocale": "en-us",
-          "disabled": false,
-          "maxTurnCount": 3,
-          "alwaysPrompt": false,
-          "allowInterruptions": false,
-          "prompt": "${ChoiceInput_Prompt_jhpLTl()}",
-          "unrecognizedPrompt": "",
-          "invalidPrompt": "",
-          "defaultValueResponse": "",
-          "choiceOptions": {
-            "includeNumbers": true,
-            "inlineOrMore": ", or ",
-            "inlineOr": " or ",
-            "inlineSeparator": ", "
-          },
-          "property": "user.style",
-          "choices": [
-            {
-              "value": "Exit",
-              "synonyms": [
-                "1"
-              ]
-            },
-            {
-              "value": "Restart the Chat",
-              "synonyms": [
-                "2"
-              ]
-            }
-          ]
-        },
-        {
-          "$kind": "Microsoft.IfCondition",
-          "$designer": {
-            "id": "NoMo9k"
-          },
-          "condition": "=user.style==1",
-          "elseActions": [],
-          "actions": []
+          "value": "dialog.foreach.value",
+          "index": "dialog.foreach.index"
         }
       ]
     },
@@ -193,6 +132,109 @@
               "activity": "${SendActivity_IhUsHf()}"
             }
           ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "FzorRZ",
+        "name": "Exit"
+      },
+      "intent": "Exit",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "7FccKT"
+          },
+          "activity": "${SendActivity_7FccKT()}"
+        }
+      ],
+      "entities": []
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "y16vc7",
+        "name": "Restart"
+      },
+      "intent": "Restart",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "FhECmC"
+          },
+          "activity": "${SendActivity_FhECmC()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "8NQaWf",
+        "name": "Unknown intent"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "ZkK2sz"
+          },
+          "activity": "${SendActivity_ZkK2sz()}"
+        },
+        {
+          "$kind": "Microsoft.ConfirmInput",
+          "$designer": {
+            "id": "O1o5EO"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ConfirmInput_Prompt_O1o5EO()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.confirm",
+          "confirmChoices": [
+            "Exit",
+            "Restart"
+          ],
+          "style": "heroCard"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "1prLJP"
+          },
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "AL92VR"
+              },
+              "activity": "${SendActivity_AL92VR()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "sUATKn"
+              },
+              "activity": "${SendActivity_sUATKn()}"
+            }
+          ],
+          "condition": "=user.confirm == true"
         }
       ]
     }

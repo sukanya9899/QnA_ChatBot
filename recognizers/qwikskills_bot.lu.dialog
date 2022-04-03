@@ -1,5 +1,8 @@
 {
   "$kind": "Microsoft.MultiLanguageRecognizer",
   "id": "LUIS_qwikskills_bot",
-  "recognizers": {}
+  "recognizers": {
+    "en-us": "qwikskills_bot.en-us.lu",
+    "": "qwikskills_bot.en-us.lu"
+  }
 }

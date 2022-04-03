@@ -23,10 +23,52 @@
 # SendActivity_IhUsHf()
 - ${expandText(@answer)}
 
-# ChoiceInput_Prompt_jhpLTl()
+# ChoiceInput_Prompt_0Bb4c0()
 [Activity
-    Text = ${ChoiceInput_Prompt_jhpLTl_text()}
+    Text = ${ChoiceInput_Prompt_0Bb4c0_text()}
 ]
 
-# ChoiceInput_Prompt_jhpLTl_text()
-- What's Next ?
+# ChoiceInput_Prompt_0Bb4c0_text()
+- What's next?
+# SendActivity_7FccKT()
+[Activity
+    Text = ${SendActivity_7FccKT_text()}
+]
+
+# SendActivity_7FccKT_text()
+- Thank you ! See you later.
+# SendActivity_FhECmC()
+[Activity
+    Text = ${SendActivity_FhECmC_text()}
+]
+
+# SendActivity_FhECmC_text()
+- Welcome to QwikSkills! How may I help you today ?
+# SendActivity_ZkK2sz()
+[Activity
+    Text = ${SendActivity_ZkK2sz_text()}
+]
+
+# SendActivity_ZkK2sz_text()
+- For more information call us at [8001569391](https://wa.me/918001569391)
+# ConfirmInput_Prompt_O1o5EO()
+[Activity
+    Text = ${ConfirmInput_Prompt_O1o5EO_text()}
+]
+
+# ConfirmInput_Prompt_O1o5EO_text()
+- What's next ?
+# SendActivity_AL92VR()
+[Activity
+    Text = ${SendActivity_AL92VR_text()}
+]
+
+# SendActivity_AL92VR_text()
+- Ok see you later. Bye !
+# SendActivity_sUATKn()
+[Activity
+    Text = ${SendActivity_sUATKn_text()}
+]
+
+# SendActivity_sUATKn_text()
+- Welcome to QwikSkills! How may I help you today ?
